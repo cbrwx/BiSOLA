@@ -1,5 +1,5 @@
 # BiSOLA: Bi-objective Self-Organizing Layered Architecture for Multi-Task Learning
-BiSOLA (Bi-objective Self-Organizing Layered Architecture) is a multi-task learning architecture developed for the flexible and efficient training of machine learning models. Our approach leverages the principles of evolutionary algorithms to facilitate model optimization in a multi-task learning environment. The architecture is adaptive and self-organizing, enhancing its performance through an iterative process of mutation, crossover, and selection.
+BiSOLA (Bi-objective Self-Organizing Layered Architecture) is a multi-task learning architecture developed for the flexible and efficient training of machine learning models. My approach tries to leverage the principles of evolutionary algorithms to facilitate model optimization in a multi-task learning environment. The architecture is adaptive and self-organizing, enhancing its performance through an iterative process of mutation, crossover, and selection.
 
 ## Key Features
 Adaptive Architecture:
