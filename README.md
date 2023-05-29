@@ -39,13 +39,13 @@ Please note that the success of the training process largely depends on the prob
 ## Limitations
 While the architecture has been designed to be highly versatile and adaptive, there are certain limitations to consider:
 
-Parallel Execution Constraints: Although the architecture is designed to run in parallel, you must ensure that your system is adequately set up to handle multiprocessing. Note that the Python Global Interpreter Lock (GIL) might restrict parallel execution to a single core for computation-heavy tasks. Therefore, hardware constraints might limit the effective speedup that can be achieved through parallel execution.
+- Parallel Execution Constraints: Although the architecture is designed to run in parallel, you must ensure that your system is adequately set up to handle multiprocessing. Note that the Python Global Interpreter Lock (GIL) might restrict parallel execution to a single core for computation-heavy tasks. Therefore, hardware constraints might limit the effective speedup that can be achieved through parallel execution.
 
-Memory Constraints: Given that BiSOLA maintains a population of models and generates new models during its execution, it may require substantial memory resources for larger populations or complex models.
+- Memory Constraints: Given that BiSOLA maintains a population of models and generates new models during its execution, it may require substantial memory resources for larger populations or complex models.
 
-Non-convex Optimization Space: As with any machine learning model, the optimization space in BiSOLA is non-convex, which implies that the architecture might end up in local optima, and might require multiple runs or different initialization parameters to achieve the best results.
+- Non-convex Optimization Space: As with any machine learning model, the optimization space in BiSOLA is non-convex, which implies that the architecture might end up in local optima, and might require multiple runs or different initialization parameters to achieve the best results.
 
-Dependence on Hyperparameters: The performance of the architecture is influenced by a number of hyperparameters such as the population size, the threshold for adaptive architecture changes, and the selection strategy. Finding the optimal set of hyperparameters might require systematic hyperparameter tuning.
+- Dependence on Hyperparameters: The performance of the architecture is influenced by a number of hyperparameters such as the population size, the threshold for adaptive architecture changes, and the selection strategy. Finding the optimal set of hyperparameters might require systematic hyperparameter tuning.
 
 ## Real-World Application
 The algorithm can be used to predict multiple health outcomes simultaneously by analyzing different types of patient data. For instance, image data from medical scans (MRI, CT scans, etc.) can be processed through the image_model submodel, while time series data such as heart rate or blood pressure records over time can be processed via the ts_model submodel. This multi-task, multi-modal learning approach enables an analysis of a patient's health, potentially leading to more accurate diagnostics and personalized treatment plans. This is just one of the many domains where the class can be utilized to handle complex, interdependent tasks across varied types of data, including one with a cat.
